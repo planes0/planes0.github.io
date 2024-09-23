@@ -51,6 +51,15 @@
 </style>
 </head>
 <body>
+<div class="header-container">
+    <select onchange="location = this.value;">
+        <option value="" selected disabled>Выберите страницу</option>
+        <option value="page1.html">Страница 1</option>
+        <option value="page2.html">Страница 2</option>
+        <option value="page3.html">Страница 3</option>
+    </select>
+    <button onclick="location.href='page4.html'">Страница 4</button>
+</div>
 <div class="container">
     <select onchange="location = this.value;">
         <option value="" selected disabled>Выберите страницу</option>
