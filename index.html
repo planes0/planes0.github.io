@@ -14,7 +14,7 @@
         padding: 0;
     }
     .nav {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.8);
         padding: 10px 20px;
         display: flex;
         justify-content: space-between;
@@ -32,12 +32,16 @@
     }
     .nav-links a {
         margin-right: 20px;
+        padding: 10px 20px;
         color: #555;
         text-decoration: none;
-        transition: color 0.3s;
+        border: 2px solid #555;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
     }
     .nav-links a:hover {
-        color: #333;
+        background-color: #555;
+        color: #fff;
     }
     .container {
         max-width: 800px;
@@ -62,9 +66,9 @@
 <div class="nav">
     <a href="#" class="logo">Логотип</a>
     <div class="nav-links">
-        <a href="#">Главная</a>
-        <a href="#">Услуги</a>
-        <a href="#">Контакты</a>
+        <a href="#" class="home-button">Главная</a>
+        <a href="#" class="services-button">Услуги</a>
+        <a href="#" class="contact-button">Контакты</a>
     </div>
 </div>
 <div class="container">
@@ -74,7 +78,7 @@
     <p>Дополнительный текст о вашем проекте или интересах.</p>
     <img src="https://static.insales-cdn.com/files/1/4180/18681940/original/2_473cb5e42f06f535e23c325cef50a2fe.jpg" alt="Изображение 2">
     <p>Больше информации о ваших достижениях и целях.</p>
-    <img src="https://static.insales-cdn.com/files/1/4180/18681940/original/2_473cb5e42f06f535e23c325cef50a2fe.jpg" alt="Изображение 3">
+    <img src="https://avatars.mds.yandex.net/get-lpc/9736426/908e0ca8-c571-402a-ab00-90c509e0f044/orig" alt="Изображение 3">
     <p>Заключительный текст или приглашение к контакту.</p>
 </div>
 </body>
