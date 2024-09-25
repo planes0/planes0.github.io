@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Базовая HTML страница</title>
-<style>
-    body {
-        background-image: url('https://s3.stroi-news.ru/img/priroda-vertikalnie-kartinki-4.jpg'); 
-        background-size: cover;
-        background-position: center;
-        color: #000000; 
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 20px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайн страницы</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://s3.stroi-news.ru/img/priroda-vertikalnie-kartinki-4.jpg'); /* Фоновое изображение */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Цвет текста */
+            text-align: center;
+        }
 
-    h1 {
-        font-size: 24px;
-    }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон контейнера */
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-    p {
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-    .image{
-        max-width: 60%;
-        margin: 0 auto;
-    }
-    .image img:first-child{
-    transition: transform 2s; /* добавляем плавный переход */
-    }
+        h1 {
+            font-family: 'Times New Roman', Times, serif; /* Измененный шрифт для заголовка */
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
 
-    .image:hover img:first-child{
-        transform: scale(4); /* увеличиваем размер изображения на 20% */
-    }
-</style>
+        p {
+            font-family: 'Verdana', sans-serif; /* Измененный шрифт для текста */
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Добро пожаловать на мою HTML страницу</h1>
-    <p>Здесь вы можете найти информацию о моих услугах и контактные данные.</p>
-    <div class="image">
-        <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение">
+    <div class="container">
+        <h1>Добро пожаловать на страницу</h1>
+        <p>Здесь вы найдете интересный контент и красивые изображения</p>
+        <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение 1">
+        <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение 2">
     </div>
-    <p>sadasda</p>
-    <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение">
 </body>
+
 </html>
