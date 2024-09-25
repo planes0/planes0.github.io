@@ -23,18 +23,20 @@
         font-size: 16px;
         margin-bottom: 20px;
     }
-    img {
-    transition: transform 0.3s; /* добавляем плавный переход */
+    .image {
+    transition: transform 0.5s; /* добавляем плавный переход */
     }
 
-    img:hover {
-        transform: scale(1.2); /* увеличиваем размер изображения на 20% */
+    .image:hover {
+        transform: scale(10); /* увеличиваем размер изображения на 20% */
     }
 </style>
 </head>
 <body>
     <h1>Добро пожаловать на мою HTML страницу</h1>
     <p>Здесь вы можете найти информацию о моих услугах и контактные данные.</p>
-    <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение">
+    <div class="image">
+        <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение">
+    </div>
 </body>
 </html>
