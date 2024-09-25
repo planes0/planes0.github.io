@@ -9,7 +9,7 @@
         background-image: url('https://s3.stroi-news.ru/img/priroda-vertikalnie-kartinki-4.jpg'); 
         background-size: cover;
         background-position: center;
-        color: #ffffff; 
+        color: #000000; 
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 20px;
@@ -23,11 +23,18 @@
         font-size: 16px;
         margin-bottom: 20px;
     }
+    .image {
+    transition: transform 0.3s; /* добавляем плавный переход */
+    }
+
+    .image:hover {
+        transform: scale(1.2); /* увеличиваем размер изображения на 20% */
+    }
 </style>
 </head>
 <body>
     <h1>Добро пожаловать на мою HTML страницу</h1>
     <p>Здесь вы можете найти информацию о моих услугах и контактные данные.</p>
-    <img src="https://baikalgo.ru/wp-content/uploads/2021/04/f88ac056-e55b-4f87-a5c9-1bc879039a3d-scaled.jpeg" alt="Изображение">
+    <img src="https://img.freepik.com/free-photo/photorealistic-view-of-tree-in-nature-with-branches-and-trunk_23-2151478040.jpg" alt="Изображение">
 </body>
 </html>
