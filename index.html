@@ -97,6 +97,17 @@
         border-radius: 5px;
         cursor: pointer;
     }
+    .message {
+        display: none; /* Изначально скрытое окошко */
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 </style>
 </head>
 <body>
@@ -128,18 +139,18 @@
             <input type="email" id="email" name="email" required><br>
             <label for="message">Сообщение:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button onclick="displayMessage()" type="submit">Отправить</button>
-            <div class="message" id="message">Отправлено</div>
+            <button onclick="displayMessage()">Отправить</button>
+                <div class="message" id="message">Отправлено</div>
     
-            <script>
-                function displayMessage() {
-                    var message = document.getElementById("message");
-                    message.style.display = "block"; // Показать окошко с надписью
-                    setTimeout(function() {
-                        message.style.display = "none"; // Скрыть окошко спустя некоторое время
-                    }, 2000); // 2000 миллисекунд (2 секунды)
-                }
-        </script>
+                <script>
+                    function displayMessage() {
+                        var message = document.getElementById("message");
+                        message.style.display = "block"; // Показать окошко с надписью
+                        setTimeout(function() {
+                            message.style.display = "none"; // Скрыть окошко спустя некоторое время
+                        }, 2000); // 2000 миллисекунд (2 секунды)
+                    }
+                </script>
         </form>
     </div>
 </div>
