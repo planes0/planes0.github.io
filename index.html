@@ -76,6 +76,10 @@
         display: block;
         margin-bottom: 5px;
     }
+    #logo-image {
+        max-width: 200px; /* Максимальная ширина изображения */
+        max-height: 200px; /* Максимальная высота изображения */
+    }
     .form-container input,
     .form-container textarea {
         width: 100%;
@@ -98,7 +102,7 @@
 <body>
 <div class="nav">
     <a href="https://planes0.github.io/" class="logo">
-        <img src="logo.png">
+        <img id="logo-image" src="logo.png">
     </a>
     <div class="nav-links">
         <a href="https://planes0.github.io/" class="home-button">Главная</a>
