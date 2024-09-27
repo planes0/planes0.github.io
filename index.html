@@ -128,7 +128,18 @@
             <input type="email" id="email" name="email" required><br>
             <label for="message">Сообщение:</label><br>
             <textarea id="message" name="message" rows="4" required></textarea><br>
-            <button type="submit">Отправить</button>
+            <button onclick="displayMessage()" type="submit">Отправить</button>
+            <div class="message" id="message">Отправлено</div>
+    
+            <script>
+                function displayMessage() {
+                    var message = document.getElementById("message");
+                    message.style.display = "block"; // Показать окошко с надписью
+                    setTimeout(function() {
+                        message.style.display = "none"; // Скрыть окошко спустя некоторое время
+                    }, 2000); // 2000 миллисекунд (2 секунды)
+                }
+        </script>
         </form>
     </div>
 </div>
