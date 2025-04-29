@@ -102,6 +102,11 @@
             flex: 1;
         }
         
+        .about-text p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
         .about-img {
             flex: 1;
             max-width: 400px;
@@ -130,8 +135,8 @@
             transform: scale(1.05);
         }
         
-        /* Контакты */
-        .contacts {
+        /* Увлечения */
+        .hobbies {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -139,7 +144,7 @@
             margin-top: 2rem;
         }
         
-        .contact-card {
+        .hobby-card {
             background: white;
             padding: 1.5rem;
             border-radius: 8px;
@@ -149,11 +154,11 @@
             transition: transform 0.3s;
         }
         
-        .contact-card:hover {
+        .hobby-card:hover {
             transform: translateY(-5px);
         }
         
-        .contact-icon {
+        .hobby-icon {
             font-size: 2rem;
             margin-bottom: 1rem;
             color: #6e8efb;
@@ -166,6 +171,11 @@
             text-align: center;
             padding: 2rem 0;
             margin-top: 2rem;
+        }
+        
+        .footer-heart {
+            color: #ff6b6b;
+            font-size: 1.2em;
         }
         
         /* Адаптивность */
@@ -189,7 +199,7 @@
     <!-- Шапка с фото и именем -->
     <header>
         <div class="container">
-            <img src="blob:https://web.telegram.org/a5159eb3-5521-49ba-8dd4-116e627203ae" alt="Мое фото" class="profile-img">
+            <img src="https://sun9-65.userapi.com/impg/O3JSzPuPK59c2c2DLzFcfYUP7aeq-Xd5VgStkg/IgC0KaP8r6A.jpg?size=352x346&quality=95&sign=1472880c98d85c74e1800e4d51793763&type=album" alt="Мое фото" class="profile-img">
             <h1>Любимая Кристь</h1>
             <p class="tagline">Та, кем я очень дорожу</p>
         </div>
@@ -200,7 +210,7 @@
         <ul>
             <li><a href="#about">Информейшн</a></li>
             <li><a href="#gallery">Фоточки😍</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+            <li><a href="#hobbies">Мои увлечения</a></li>
         </ul>
     </nav>
     
@@ -211,11 +221,11 @@
             <h2>Кристик</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Привет! Меня зовут Кристиночка.</p>
-                    <p>Очень люблю витиков</p>
-                    <p>А еще я играю в театре.</p>
+                    <p>Привет! Меня зовут Кристиночка. 👋✨</p>
+                    <p>Очень люблю витиков 🥰💕</p>
+                    <p>А еще я нямка. 🍰😋</p>
                 </div>
-                <img src="https://sun9-20.userapi.com/impg/pqhI7F0ecXHMEeCPA7cuD4-EHna86zNWB4dzwg/ygHVXGKxyQE.jpg?size=2560x1707&quality=95&sign=13a229f5ffed7b5135309870372a5270&type=album" alt="Обо мне" class="about-img">
+                <img src="https://sun9-80.userapi.com/impg/H8Dk7N34dleK5RDw7KWXkB6orlA5Mj0SCN3svw/TuWlQhkyy_A.jpg?size=600x800&quality=95&sign=7b41d6c303d464571f356a9e0a1a0007&type=album" alt="Обо мне" class="about-img">
             </div>
         </section>
         
@@ -228,32 +238,33 @@
                 <img src="https://sun9-51.userapi.com/impg/3Ko8xWbsHkRifJwIjS70qFLS3tdmhUEl7OYAyA/FNfqitK433M.jpg?size=2560x1707&quality=95&sign=f4752b8ab70543c4da6fe79a84c4c557&type=album" alt="Озеро">
                 <img src="https://sun9-55.userapi.com/impg/fv-EsE2Lqam1CFjO8YAgA5oPT-tSj_U9KjieLA/N5dIfK_IBEw.jpg?size=2560x1707&quality=95&sign=7fa97748beea23c7c2c781a23fbf58e3&type=album" alt="Скалы">
                 <img src="https://sun9-47.userapi.com/impg/MVqa69Kfru4Qhw6VGfuep56WKgwhvHFLrgcmyw/Eku2FfMSXkc.jpg?size=2560x1707&quality=95&sign=24b374e9476e5bda2058bff7320e1295&type=album" alt="Поле">
+                <img src="https://sun9-75.userapi.com/impg/hFUtr_SdrsFWPmukaPzPcXB7IZFLkXVqxETgbQ/GT_avpAPBJ0.jpg?size=1280x960&quality=95&sign=087add3aa26948779e704d606a24a6c1&type=album" alt="Новое фото">
             </div>
         </section>
         
-        <!-- Контакты -->
-        <section id="contacts">
-            <h2>Мои контакты</h2>
-            <div class="contacts">
-                <div class="contact-card">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>example@email.com</p>
+        <!-- Увлечения -->
+        <section id="hobbies">
+            <h2>Мои увлечения</h2>
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎨</div>
+                    <h3>Рисование</h3>
+                    <p>Люблю рисовать много красивого и милого, очень круто рисую гусей и жабов 🦆🐸</p>
                 </div>
-                <div class="contact-card">
-                    <div class="contact-icon">📱</div>
-                    <h3>Телефон</h3>
-                    <p>+7 (123) 456-78-90</p>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏃‍♀️</div>
+                    <h3>Бег</h3>
+                    <p>Бегаю регулярно и привожу организм в тонус 💪🏃‍♀️</p>
                 </div>
-                <div class="contact-card">
-                    <div class="contact-icon">💼</div>
-                    <h3>Соцсети</h3>
-                    <p>@myprofile</p>
+                <div class="hobby-card">
+                    <div class="hobby-icon">👾</div>
+                    <h3>Аниме</h3>
+                    <p>Смотрю аниме, читаю мангу и манхву 📺📖</p>
                 </div>
-                <div class="contact-card">
-                    <div class="contact-icon">🏠</div>
-                    <h3>Адрес</h3>
-                    <p>Город, улица</p>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🧸</div>
+                    <h3>Куклы</h3>
+                    <p>Коллекционирую (инвестирую в) монстр хай 👻💸</p>
                 </div>
             </div>
         </section>
@@ -262,7 +273,7 @@
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Моя личная визитка. Все права защищены.</p>
+            <p>от Витиков, <span class="footer-heart">❤️</span> для дорогих Кристь</p>
         </div>
     </footer>
 </body>
